@@ -7,26 +7,32 @@ export const crearCuboHtml=()=>{
 const carrouselCubo =
 
 `
+<div class="container">
+     <div class="row">
+<div class="col-sm-12">
 
-  <div class="carousel-item active">
-    <img src="./assets/img/cubo-logo.PNG" class="d-block " alt="...">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/img/cubo-logo.PNG" class="d-block w-100" alt="..." height="600px" >
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/cubo-com-man.PNG" class="d-block w-100" alt="..." height="600px">
+    </div>
+    <div class="carousel-item">
+      <img s src="./assets/img/cubo-social-media.PNG" class="d-block w-100" alt="..." height="600px">
+    </div>
   </div>
-  <div class="carousel-item">
-    <img src="./assets/img/cubo-com-man.PNG" class="d-block " alt="...">
-  </div>
-  <div class="carousel-item">
-    <img src="./assets/img/cubo-social-media.PNG" class="d-block " alt="...">
-  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>`
+`
 
 const div = document.createElement ('div');
 div.innerHTML = carrouselCubo;
@@ -56,16 +62,16 @@ const  footerHtml =
     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
       <h6 class="text-uppercase mb-4 font-weight-bold">Clientes</h6>
       <p>
-        <a href="#!">@contar.la.vida</a>
+        <a href="https://www.instagram.com/contar.la.vida/?hl=es" target="_blanck">@contar.la.vida</a>
       </p>
       <p>
-        <a href="#!">@fittcalzas</a>
+        <a href="https://www.instagram.com/fittcalzass/?hl=es" target="_blanck">@fittcalzas</a>
       </p>
       <p>
-        <a href="#!">@vabrackets</a>
+        <a href="https://www.instagram.com/vabracketscba/?hl=es" target="_blanck">@vabrackets</a>
       </p>
       <p>
-        <a href="#!">@coremadental</a>
+        <a href="https://www.instagram.com/coremadental/?hl=es" target="_blanck">@coremadental</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -82,9 +88,10 @@ const  footerHtml =
       <p>
         <i class="fas fa-home mr-3"></i> Mendiolaza,Córdoba, Argentina</p>
       <p>
-        <i class="fas fa-envelope mr-3"></i> @cubocomunicacion</p>
-      <p>
-        <i class="fas fa-phone mr-3"></i> cubomanager@gmail.com</p>
+        <i class="fas fa-envelope mr-3"></i><a href="https://www.instagram.com/cubocomunicacion/?hl=es" target="_blanck"> @cubocomunicacion</p>
+        <p>
+        <i class="fas fa-envelope mr-3"></i><a href="mailto:cubomanager@gmail.com" target="_blanck"> cubomanager@gmail.com</p>
+      </p>
       <p>
         <i class="fas fa-print mr-3"></i> 0351 - 155316571</p>
     </div>
@@ -159,9 +166,11 @@ export const crearBtnCuboHead = ()=>{
 
     const btnHead =
 
-    `<button type="button" class="dark">Nosotras</button>
-    <button type="button" class="dark">Servicios</button>
-    <button type="button" class="dark">Promos</button>`
+    `<div style="margin-left: 400px" style="text-align: right ;width:220px"class="btn-group" role="group" aria-label="Basic example" text-align="right">
+    <button style="background-color: #F8BBD0;" id="btnNosotras" type="button" class="btn">Nosotras</button>
+    <button style="background-color: #F8BBD0;" type="button" class="btn">Servicios</button>
+    <button style="background-color: #F8BBD0;" type="button" class="btn">Promos</button>
+  </div>`
 
     const div = document.createElement ('div');
 
