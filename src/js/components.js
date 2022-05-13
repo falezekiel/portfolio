@@ -93,7 +93,7 @@ const  footerHtml =
         <i class="fas fa-envelope mr-3"></i><a href="mailto:cubomanager@gmail.com" target="_blanck"> cubomanager@gmail.com</p>
       </p>
       <p>
-        <i class="fas fa-print mr-3"></i> 0351 - 155316571</p>
+        <i class="fas fa-print mr-3"></i><a href="https://api.whatsapp.com/send?phone=3515316571&text=Hola!" target="_blanck"> 0351 - 155316571</p>
     </div>
     <!-- Grid column -->
 
@@ -166,7 +166,7 @@ export const crearBtnCuboHead = ()=>{
 
     const btnHead =
 
-    `<div style="margin-left: 400px" style="text-align: right ;width:220px"class="btn-group" role="group" aria-label="Basic example" text-align="right">
+    `<div style="margin-left: 750px" style="text-align: right ;width:220px"class="btn-group" role="group" aria-label="Basic example" text-align="right">
     <button style="background-color: #F8BBD0;" id="btnNosotras" type="button" class="btn">Nosotras</button>
     <button style="background-color: #F8BBD0;" type="button" class="btn">Servicios</button>
     <button style="background-color: #F8BBD0;" type="button" class="btn">Promos</button>
