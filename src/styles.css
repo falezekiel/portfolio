@@ -1,8 +1,175 @@
-html,body {
-margin: 0px;
-background-color: grey ;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+body {
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    background-repeat: no-repeat;
 }
 
 img {
     width: 150px;
+}
+
+.header {
+    color:black;
+    height: 25%;
+    width: 100%;
+    display: flex;
+     
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.nav ul li {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.fotoPerfil{
+    border-radius: 50%;
+}
+
+.resumen{
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.presentacion {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.presentacion img{
+    width: 600px;
+}
+
+ .texto {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.habilidades {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.habilidades img{
+    width: 600px;
+}
+
+.subheader {
+    font-size: 25px;
+}
+
+.proyectos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.card {
+
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.contacto{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnUp {
+    background-color: #6C63FF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+}
+
+.btnUp img{
+    width: 25px;
+    position: fixed;
+    bottom:40px;
+    right: 18px;
+}
+
+.datos {
+    margin-bottom: 100px;
+}
+
+.cv a{
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content:center;
+    
+}
+
+.whatsapp a{
+    margin-top: 20px;
+}
+
+.whatsapp img{
+    width: 80px;
+}
+
+.mail{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.mail img{
+    width: 35px;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+.ubicacion a{
+    margin-left: 290px;
+}
+
+.redes img{
+    width: 60px;
+    
+}
+
+.facebook   {
+    display: flex;
+    justify-content: center;
+}
+.facebook a{
+    margin-top: 21px;
 }
