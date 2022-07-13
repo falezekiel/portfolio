@@ -44,7 +44,7 @@ output: {
     //Aquí se ejecuta la instancia que hemos creado antes para que copie el index html de la carpeta src a dist para cuando se suba a producción
     plugins:[
         new HtmlWebPackPlugin({
-            template: './index.html',
+            template: './src/index.html',
             filename: './index.html'
         }),
         new MiniCssExtractPlugin ({
