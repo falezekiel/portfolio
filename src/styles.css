@@ -32,6 +32,7 @@ img {
     
 }
 .nav ul li {
+    text-decoration: none;
     text-decoration: underline;
     font-size: 22px;
     font-weight: 600;
@@ -39,6 +40,8 @@ img {
     list-style: none;
     margin-top: 50px;
 }
+
+
 
 .fotoPerfil{
     border-radius: 50%;
@@ -86,14 +89,7 @@ img {
     margin-bottom: 100px;
 }
 
-.card {
 
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: white;
-
-}
 
 .contacto{
     margin-top: 100px;
@@ -119,16 +115,22 @@ img {
     right: 18px;
 }
 
-.datos {
-    margin-bottom: 100px;
+
+
+.cv{
+    margin-top: 50px;
 }
 
 .cv a{
     text-decoration: none;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 100px;
     font-weight: bold;
     font-size: 18px;
+}
+
+.datos {
+    margin-bottom: 100px;
 }
 
 .whatsapp {
@@ -138,21 +140,27 @@ img {
 }
 
 .whatsapp a{
-    margin-top: 20px;
+    margin-top: 10px;
+    text-decoration: none ;
 }
 
 .whatsapp img{
-    width: 80px;
+    width: 40px;
 }
 
 .mail{
-    margin-top: -30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
+.mail a{
+    margin-top: 10px;
+    text-decoration: none;
+}
 
 .mail img{
-    width: 35px;
+    
+    width: 40px;
     margin-left: 90px;
     margin-right: 10px;
 }
@@ -162,7 +170,7 @@ img {
 }
 
 .redes img{
-    width: 60px;
+    width: 40px;
     
 }
 
@@ -171,5 +179,63 @@ img {
     justify-content: center;
 }
 .facebook a{
-    margin-top: 21px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.insta   {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.insta a{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.LinkedIn   {
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+}
+.LinkedIn a{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.card {
+
+    width: 500px;
+    height: 800px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.imgcard {
+    border-bottom: 1px solid gray;
+}
+.imgcard img{
+    width: 500px;
+    height: 600px;
+    object-fit:cover;
+    border-radius: 20px 20px 0px 0px;
+ 
+
+}
+.imgcard2 {
+    border-bottom: 1px solid gray;
+}
+.imgcard2 img{
+    width: 500px;
+    height: 600px;
+    object-fit:fill;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.texto2 {
+    padding: 5px;
+    font-weight: 800;
 }
