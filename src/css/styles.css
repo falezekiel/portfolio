@@ -165,10 +165,23 @@ img {
     margin-right: 10px;
 }
 
-.ubicacion a{
-    margin-left: 290px;
+.github{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 
+.github a{
+    margin-top: 10px;
+    text-decoration: none;
+}
+.github img{
+    width: 40px;
+    margin-left: -25px;
+    margin-right: 5px;
+
+}
 .redes img{
     width: 40px;
     
