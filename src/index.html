@@ -9,33 +9,44 @@
   <title>EzeDecan</title>
   <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="48x48">
   <link rel="stylesheet" href="/src/assets/css/styles.css">
-
+  <script src="https://kit.fontawesome.com/b596a76494.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
   <header class="header">
-    <div class="resumen">
-      Dario Ezequiel Decandido
-      <br>
-      Full stack developer
-      <br>
-      Córdoba, Argentina
-    </div>
-    <picture>
-      <img id="perfil" class="fotoPerfil" src="./assets/img/perfilSVG.svg" alt="fotoPerfil">
-    </picture>
     <nav class="nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="enlace">
+        <img id="perfil" class="fotoPerfil" src="./assets/img/perfilSVG.svg" alt="fotoPerfil">
+      </a>
+      <br>
+
+      <!-- <div class="resumen">
+        Dario Ezequiel Decandido
+        <br>
+        Full stack developer
+        <br>
+        Córdoba, Argentina
+      </div> -->
       <ul>
-        <li><a href="#presentacion">Presentación</a> </li>
-        <li><a href="#habilidades">Habilidades</a> </li>
+        <li><a class="active" href="#presentacion">Presentación</a> </li>
+        <li><a href="#hab">Habilidades</a> </li>
         <li><a href="#proyectos">Proyectos</a> </li>
         <li><a href="#contacto">Contacto</a> </li>
       </ul>
     </nav>
   </header>
-  <hr>
   <main>
+    <br>
+    <br>
+    <hr>
+    <div class="nombre">
+      <h4 class="resumen">Ezequiel Decandido <br> Full Satack Developer</h4>
+    </div>
     <div class="presentacion" id="presentacion">
       <img src="./assets/img/presentacion2.svg" alt="presentacion">
       <p class="texto">Soy una persona a la que le gustan los desafíos, autodidacta y con la mente abierta siempre
@@ -52,10 +63,10 @@
 
       </p>
     </div>
-    <div class="habilidades" id="habilidades">
+    <div class="habilidades" id="hab">
       <div>
         <h2 class="subheader">Habilidades</h2>
-        <ul class="texto">
+        <ul class="texto" id="ulhab">
           <li>CSS</li>
           <li>Flexbox</li>
           <li>HTML</li>
@@ -107,11 +118,13 @@
 
           <p>Nombre: Control Stock</p>
           <p>Origen: Propio</p>
-          <p>Tareas: Modificación de una estructura base sacada de GitHub donde le añadí funcionalidades y estética totalmente diferente</p>
+          <p>Tareas: Modificación de una estructura base sacada de GitHub donde le añadí funcionalidades y estética
+            totalmente diferente</p>
           <p>Descripción: Web app para realizar control de pedidos en restaurantes - en desarrollo</p>
           <p>Stack: Angular 13, Angular Material, HTML, CSS, Firebase Firestore</p>
           <p>Deploy: Firebase Hosting</p>
-          <p>Link: <a href="https://github.com/falezekiel/stock-roticeria" target="_blank">https://github.com/falezekiel/stock-roticeria</a></p>
+          <p>Link: <a href="https://github.com/falezekiel/stock-roticeria"
+              target="_blank">https://github.com/falezekiel/stock-roticeria</a></p>
 
         </div>
       </div>
@@ -132,9 +145,9 @@
       </div>
     </div>
     <div class="proyectos">
-      <div class="card">
+      <div class="card" id="maqueta">
         <div class="imgcard">
-          <img src="./assets/img/maquetaBlog.png" alt="QuieroCuentos">
+          <img src="./assets/img/maquetaBlog.png" alt="Maqueta">
         </div>
 
         <div class="texto2">
@@ -144,7 +157,8 @@
           <p>Descripción: Maqueta para blogs de práctica totalmente funcional</p>
           <p>Stack: CSS, HTML, TypeScript, Angular 13, Mongo DB, Nodejs</p>
           <p>Deploy: no se ha subido a la web</p>
-          <p>Link: <a href="https://github.com/falezekiel/MaquetaBlog" target="_blank">https://github.com/falezekiel/MaquetaBlog</a></p>
+          <p>Link: <a href="https://github.com/falezekiel/MaquetaBlog"
+              target="_blank">https://github.com/falezekiel/MaquetaBlog</a></p>
 
         </div>
       </div>
@@ -161,7 +175,8 @@
           <p>Descripción: Landing page de emprendimiento a modo de muestra</p>
           <p>Stack: CSS, HTML, JavasCript</p>
           <p>Deploy: Firebase Hosting</p>
-          <p>Link: <a href="https://github.com/falezekiel/landing-emp" target="_blank">https://github.com/falezekiel/landing-emp</a></p>
+          <p>Link: <a href="https://github.com/falezekiel/landing-emp"
+              target="_blank">https://github.com/falezekiel/landing-emp</a></p>
 
         </div>
       </div>
@@ -182,8 +197,29 @@
         </div>
       </div>
     </div>
+    <div class="proyectos">
+      <div class="card" id="prueba" >
+        <div class="imgcard">
+          <img src="./assets/img/pruebaTecnica.png" alt="pruebaTecnica">
+        </div>
 
-    
+        <div class="texto2">
+          <p>Nombre: Prueba técnica </p>
+          <p>Origen: Propio</p>
+          <p>Tareas: Desarrollo desde 0 </p>
+          <p>Descripción: Carga una imagen y de ella se obtienen sus datos y al hacer click muestra las coordenadas del cursor y el color del pixel seleccionado en RGB y HEXA</p>
+          <p>Stack: CSS, HTML, TypeScript, Angular 13</p>
+          <p>Deploy: Firebase Hosting</p>
+          <p>Link: <a href="https://prueba-tecnica-bed3d.web.app"
+              target="_blank">https://prueba-tecnica-bed3d.web.app</a></p>
+          <p>Link Repo: https://github.com/falezekiel/pruebaTecnica</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
   </main>
   <hr>
   <footer>
